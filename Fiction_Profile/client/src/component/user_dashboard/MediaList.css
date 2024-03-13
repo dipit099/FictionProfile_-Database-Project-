@@ -1,0 +1,44 @@
+.media-list-container {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+
+
+.add-mediaType-container {
+    margin-right: 50px;
+}
+
+
+.media-list-container .media-item-div {
+   
+  
+    display: flex;
+    flex-direction: row;
+}
+.media-list-container .media-items {
+
+    display: flex;
+    
+
+}
+
+.media-list-container .checkboxes {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.status_badge {
+    margin-top: 5px;
+    background-color: #892df1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+
+}

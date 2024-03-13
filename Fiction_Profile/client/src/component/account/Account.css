@@ -1,0 +1,102 @@
+.account {
+    margin-top: 200px;
+}
+
+
+.account-container {
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.account-headline {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: aquamarine;
+
+
+}
+
+
+.username-container {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.profile-pic-container {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.profile-pic-select {
+    font-size: 20px;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+
+
+.account-container label {
+    display: block;
+}
+
+.account-container input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 2px;
+    font-weight: bold;
+    background-color: #4268a1;
+
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.update-button {
+    padding: 10px;
+    background-color: #553ac1;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+
+
+}
+
+.update-button:hover {
+    background-color: #000000;
+    color: white;
+}

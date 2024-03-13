@@ -1,0 +1,157 @@
+.moderator-container {
+    margin-top: 100px;
+    margin-left: 120px;
+    color: white;
+    display: flex;
+}
+
+
+
+.add-media-button {
+
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+}
+
+.add-media-button:hover {
+    background-color: rgb(127, 47, 255);
+}
+
+.plus-icon {
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.button-text {
+    color: #000;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* ModeratorMedia.css */
+
+.add-media-form {
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-media-form label{
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+.add-media-form input{
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222;
+    color: #ffffff;
+    width: 100%;
+
+}
+.add-media-form select {
+    /* Your select element styles */
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222;
+    color: #ffffff;
+    /* Set the text color of the select options */
+}
+
+.add-media-form option {
+    background-color: #222;
+    color: #ffffff; /* Text color of the options */
+    font-size: 16px; /* Font size of the options */
+    padding: 8px; /* Padding of the options */
+}
+
+
+
+.modal-title {
+    font-size: 24px;
+    color: #FFFFFF;   
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFFFFF;
+}
+
+.selected-genres {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.selected-genre {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #666;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.selected-genre button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.selected-genre button:hover {
+    color: #FF0000;
+}
+
+.file-input {
+    display: block;
+    margin-top: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover,
+.submit-button:hover {
+    background-color: #0056b3;
+}

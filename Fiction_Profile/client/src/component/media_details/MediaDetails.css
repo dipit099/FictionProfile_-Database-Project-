@@ -1,0 +1,556 @@
+.MediaDetails {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.backdrop {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    /* Adjust height as needed */
+
+
+
+}
+
+.backdrop-poster {
+
+    width: 100%;
+    height: 1000px;
+    min-height: 1000px;
+    opacity: 0.6;
+    object-fit: cover;
+    /* Optional: Center the image within its container */
+    object-position: top;
+}
+
+.details-poster-div {
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0%;
+
+}
+
+.poster {
+    width: 400px;
+    height: auto;
+    /* Adjust width as needed */
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    display: flex;
+
+}
+
+
+
+
+.media-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-right: 50px;
+    left: 600px;
+    top: 12%;
+    position: absolute;
+
+}
+
+
+
+.media-title {
+    font-size: 40px;
+    font-weight: bold;
+
+
+}
+
+.media-overview {
+    margin-right: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.media-genres {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: italic;
+    color: #ccc;
+
+}
+
+
+.button-container {
+    display: flex;
+    margin-top: auto;
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.heart-icon {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.heart-icon:not(.favorite) {
+    color: rgb(104, 104, 104);
+    cursor: pointer;
+}
+
+.heart-icon.favorite {
+    color: rgb(200, 20, 59);
+    cursor: pointer;
+}
+
+.add-icon {
+    color: rgb(99, 73, 172);
+    font-size: 38px;
+}
+
+.add-icon:hover {
+    color: rgb(62, 156, 120);
+    cursor: pointer;
+
+}
+
+.circle {
+    width: 70px;
+    /* Adjust the size of the circle */
+    height: 70px;
+    /* Adjust the size of the circle */
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: #030000;
+    /* Adjust the background color of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.rating-star {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.add-rating-button {
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #5522a2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.rating-modal-content {
+    background-color: #32749c;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.btnrating {
+    border: none;
+    background: transparent;
+
+}
+
+/* CSS for rating options container */
+.rating-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+/* CSS for submit and close buttons */
+
+.field-label-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.rating-submit-button,
+.rating-close-button {
+    background-color: #007bff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    width: 120px;
+    font-weight: bold;
+    /* Same width for both buttons */
+}
+
+.btnrating:hover {
+    background: transparent;
+}
+
+/* CSS for hover effect on buttons */
+.rating-submit-button:hover,
+.rating-close-button:hover {
+    background-color: #542b9f;
+}
+
+/* CSS to center buttons */
+.rating-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-star {
+    color: #000000;
+    font-size: 35px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.fa-star:hover {
+    cursor: pointer;
+    color: #ffcc00;
+}
+
+.gold {
+    color: #ffcc00;
+    font-size: 45px;
+
+}
+
+.selected-rating {
+    color: #3f1577;
+    font-size: 45px;
+
+}
+
+.review-box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    /* Text color */
+}
+
+.review-textbox {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    resize: vertical;
+    /* Allow vertical resizing of textarea */
+    background-color: #333;
+    color: #fff;
+    /* Text color */
+}
+
+.add-review-button {
+    background-color: #007bff;
+    /* Dark blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-button:hover {
+    background-color: #0056b3;
+    /* Darker shade of blue */
+}
+
+
+
+.rating-review-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.rating-box,
+.review-box {
+
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    /* Text color */
+}
+
+.rating-box {
+    margin-top: 20px;
+    width: 28%;
+}
+
+.review-box {
+    width: 68%;
+}
+
+.rating-title,
+.reviews-title {
+    margin-bottom: 10px;
+}
+
+.rating-value {
+    font-size: 24px;
+    color: #007bff;
+    /* Dark blue */
+}
+
+.review-textbox {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    resize: vertical;
+    /* Allow vertical resizing of textarea */
+    background-color: #333;
+    color: #fff;
+    /* Text color */
+}
+
+.add-review-button {
+    background-color: #007bff;
+    /* Dark blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-button:hover {
+    background-color: #0056b3;
+    /* Darker shade of blue */
+}
+
+
+.reviews-container {
+    margin-top: 20px;
+}
+
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-title {
+    margin-bottom: 10px;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+.review-user {
+    font-size: 20px;
+}
+
+.review-title {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.review-content {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ratings-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    /* Set font color to white */
+}
+
+.ratings-table th,
+.ratings-table td {
+    padding: 8px;
+    border: 1px solid #2a2a45;
+    /* Dark blue-black border */
+    text-align: center;
+    /*font size*/
+    font-size: 20px;
+}
+
+.ratings-table th {
+    background-color: #161630;
+    /* Dark blue-black header background */
+}
+
+/* Alternating row colors */
+.even-row {
+    background-color: #281630;
+    /* Dark blue-black */
+}
+
+.odd-row {
+    background-color: #1a1a2e;
+    /* Slightly lighter blue-black */
+}
+
+/* Set font size and family */
+.ratings-table td {
+    font-size: 18px;
+    /* Adjust font size as needed */
+    font-family: Arial, sans-serif;
+    /* Set font family */
+}
+
+.edit-modal-content {
+
+    color: #FFF;
+    padding: 20px;
+
+    width: 100%;
+    width: 700px;
+    margin: auto;
+}
+
+.edit-close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.edit-title {
+    text-align: center;
+}
+
+.edit-form-group {
+    margin-bottom: 20px;
+}
+
+.edit-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-textarea {
+    height: 200px;
+}
+
+.edit-input,
+.edit-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background-color: #0f1a2f;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.edit-publish-button {
+    background-color: #6200ff;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-publish-button:hover {
+    background-color: #0056b3;
+}
+
+.edit-button {
+    background-color: #6200ff;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 50px;
+
+}
+
+
+
+.review-input,
+.review-textarea {
+    width: 100%;
+    /* Make inputs and textareas full width */
+    padding: 12px;
+    /* Increase padding */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+
+    /* Increase font size */
+}
+
+.review-textarea {
+    height: 200px;
+    /* Increase height */
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    /* Increase padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    /* Increase font size */
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.save-button:last-child {
+    margin-right: 0;
+}

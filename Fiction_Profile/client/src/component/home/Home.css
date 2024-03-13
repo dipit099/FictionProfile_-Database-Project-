@@ -1,0 +1,21 @@
+.home-container {
+    margin-top: 90px;
+    padding-left: 110px;
+    background-color: #032641;
+    margin-bottom: 100px;
+
+    width: 100%;
+
+}
+
+.home-trending-content {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 50px;
+}

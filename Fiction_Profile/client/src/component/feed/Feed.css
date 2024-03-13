@@ -1,0 +1,482 @@
+.feed-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #101320;
+    color: #fff;
+
+
+}
+
+.feedWrapper {
+    width: 55%;
+    margin-right: 20px;
+    margin-left: 150px;
+    margin-top: 100px;
+    max-height: calc(100vh - 100px);
+    /* Set the maximum height of the container */
+    overflow-y: auto;
+    /* Enable vertical scrolling when content exceeds the height */
+    padding-right: 20px;
+}
+
+
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #1a2032;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 1);
+
+}
+
+.post img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.post-title-div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+
+}
+
+.post-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+}
+
+
+.feed-date {
+    font-size: 18px;
+    color: #ccc;
+    margin-left: 30px;
+
+}
+
+.post-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #cacbe6;
+    /* White text */
+    padding: 10px;
+    /* Add padding for spacing inside the box */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+}
+
+.comment {
+    border-radius: 4px;
+    font-size: 18px;
+
+}
+
+.comment-div {
+    margin-top: 10px;
+
+}
+
+.comment-div .comment:nth-child(odd) {
+    background-color: #262d44;
+    color: #ccc;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.comment-div .comment:nth-child(even) {
+    background-color: #1d253f;
+    color: #ccc;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.feed-container textarea,
+.feed-container input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.feed-container input[type="text"] {
+    width: 40%;
+    height: 70px;
+    background-color: #23242c;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.feed-container textarea {
+    width: 80%;
+    height: 100px;
+    background-color: #23242c;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.feed-container textarea:focus,
+.feed-container input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+
+.vote-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: fit-content;
+}
+
+.feedvote-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    /* Border color */
+    padding: 8px;
+    /* Padding around the container */
+    border-radius: 25px;
+    /* Rounded corners */
+    width: fit-content;
+    /* Adjust the width based on content */
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.upvoted {
+    background-color: rgb(8, 69, 8);
+}
+
+.downvoted {
+    background-color: rgb(98, 8, 8);
+}
+
+.feedcommenttoggle-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    /* Border color */
+    padding: 10px;
+    /* Padding around the container */
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+.publish-button {
+    background-color: #6012a8;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.publish-button:hover {
+    background-color: #0056b3;
+}
+
+.report-button {
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    /* Border color */
+    padding: 10px;
+    /* Padding around the container */
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+
+
+
+}
+
+.report-button:hover {
+    background-color: #5a181f;
+    /* Darker shade of red */
+}
+
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 35%;
+}
+
+
+.followed-users-container {
+
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+
+
+}
+
+
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.followed-users-container .unfollow-button {
+    background-color: #6012a8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 10%;
+}
+
+.followed-users-container .follow-button {
+    background-color: #6012a8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 10%;
+
+}
+
+.trending-button {
+    background-color: #6012a8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 10%;
+
+}
+
+.followed-users-container .unfollow-button:hover {
+    background-color: rgb(137, 47, 47);
+}
+
+.followed-users-container .follow-button:hover {
+
+    background-color: rgb(26, 102, 26);
+}
+
+
+.followed-users-container li {
+    list-style-type: none;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.user-info {
+    margin-bottom: 20px;
+    border: 1px solid #424f64;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+
+.user-info li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Customize the scrollbar */
+.feedWrapper::-webkit-scrollbar,
+.people-you-may-know::-webkit-scrollbar {
+    width: 6px;
+    /* Set the width of the scrollbar */
+}
+
+/* Customize the thumb of the scrollbar */
+.people-you-may-know::-webkit-scrollbar-thumb,
+.feedWrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Set the background color of the thumb */
+    border-radius: 4px;
+    /* Set the border radius of the thumb */
+}
+
+/* Change scrollbar color on hover */
+.people-you-may-know::-webkit-scrollbar-thumb:hover,
+.feedWrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Set the hover color of the thumb */
+}
+
+
+.post-title-div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.post-td-div {
+    display: flex;
+    align-items: center;
+}
+
+.post-username {
+    font-size: 20px;
+    color: #ccc;
+    margin-right: 30px;
+}
+
+.trending-modal-div {
+    background-color: #1a2032;
+    color: #d1d5db;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.trending-title-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.trending-post-title-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.trending-modal-div .close-icon {
+    cursor: pointer;
+    font-size: 22px;
+    color: #d1d5db;
+    font-weight: bold;
+}
+
+.trending-post-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trending-feed-date {
+    font-size: 20px;
+    color: #ccc;
+
+    padding: 8px;
+}
+
+.trending-post-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #282f46;
+    padding: 8px;
+
+}
+
+.trending-modal-div h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trending-modal-div form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trending-modal-div input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid #4b5563;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #1e293b;
+    color: #d1d5db;
+}
+
+.trending-publish-button {
+    background-color: #6012a8;
+    color: #d1d5db;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.trending-comment-div {
+    margin-top: 20px;
+}
+
+.trending-comment {
+
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.trending-comment>div {
+    font-size: 18px;
+}
+
+.trending-comment:nth-child(even) {
+    background-color: #343355;
+    /* Set the background color for even comments */
+}
+
+.trending-comment:nth-child(odd) {
+    background-color: rgb(49, 51, 71);
+}
+
+.trending-modal-post img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
