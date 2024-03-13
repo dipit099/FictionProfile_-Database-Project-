@@ -8,10 +8,12 @@ Not only does "Fiction Profile" cater to individual content discovery, but it al
 # Project Website Url :  
 https://fiction-profile-client.web.app/
 
+(Zoom out to 75% for better view..PC friendly.. Might be slow in loading since hosting is in free mode , limited resource )
+
 or try this
 https://fiction-profile-client.firebaseapp.com/
 
-(Zoom out to 75% for better view..PC friendly.. Might be slow in loading since hosting is in free mode , limited resource )
+
 
 # Setting Up PostgreSQL
 1. Download PostgreSQL.
@@ -19,7 +21,7 @@ https://fiction-profile-client.firebaseapp.com/
 3. Download PgAdmin4 .
 4. Make sure you have Node.js installed.
 
-
+## Update: We have Removed some of our Credentials For Safety . Thats why you may not be able to run the full website Locally
 # Connect with Backend
 ### Nodemon Installation (Backend)
 ```bash
