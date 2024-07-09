@@ -182,6 +182,12 @@ This README.md file provides users with clear instructions on how to set up, run
 
 # Contributors:
 
+Dipit Saha ( sdipit099@gmail.com )  - BUET CSE
+
+Shah Mohammad Abdul Mannan - BUET CSE
+
+# Contributors:
+
 Dipit Saha
 
 Shah Mohammad Abdul Mannan
