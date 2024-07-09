@@ -152,11 +152,6 @@ Contact `sdipit099@gmail.com` for the file if needed!
 
 
 This README.md file provides users with clear instructions on how to set up, run, and contribute to the Fiction Profile project.
-# Contributors:
-
-Dipit Saha
-
-Shah Mohammad Abdul Mannan
 
 
 # Take a Tour
@@ -183,3 +178,10 @@ Shah Mohammad Abdul Mannan
 ![Screenshot_16](https://github.com/dipit099/FictionProfile-Database_Project/assets/112118531/df154d99-02fa-467d-ad82-facc6196bc90)
 
 )
+
+
+# Contributors:
+
+Dipit Saha
+
+Shah Mohammad Abdul Mannan
